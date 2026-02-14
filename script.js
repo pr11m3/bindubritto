@@ -61,7 +61,7 @@ function gsapAnimation() {
             y: 100,
             opacity: 0,
             duration: 1,
-            scrollTrigger: { trigger: ".course-section-title", start: "top 80%", end: "top 70%", scrub: 2 }
+            scrollTrigger: { trigger: ".course-section-title", start: "top 90%", end: "top 85%", scrub: 2 }
         });
         tl.from(".hero-section-two .left", {
             scale: 0,
@@ -89,24 +89,11 @@ function gsapAnimation() {
             scale: 0,
             duration: 2,
             stagger: 0.3,
-            scrollTrigger: { trigger: ".course", start: "top 90%", end: "top 70%", scrub: 2 }
+            scrollTrigger: { trigger: ".course", start: "top 90%", end: "top 85%", scrub: 2 }
         });
 
         // Process
-        tl.from(".process .left div,.process-steps .step", {
-            x: "-100%",
-            duration: 2,
-            stagger: 0.3,
-            scrollTrigger: { trigger: ".left div,.process-steps .step", start: "top 70%", end: "top 30%", scrub: 2 }
-        }, "process");
-        tl.from(".process .right", {
-            x: "100%",
-            scale: 0,
-            duration: 2,
-            stagger: 0.3,
-            scrollTrigger: { trigger: ".process .right", start: "top 100%", end: "top 50%", scrub: 2 }
-        }, "process");
-
+   
         // -----------------------------
         // INSTRUCTORS SECTION DESKTOP
         // -----------------------------
@@ -114,7 +101,7 @@ function gsapAnimation() {
             scale: 0,
             opacity: 0,
             duration: 1,
-            scrollTrigger: { trigger: ".instructors-section", start: "top 97%", end: "top 92%", scrub: 2 }
+            scrollTrigger: { trigger: ".instructors-section", start: "top 100%", end: "top 96%", scrub: 2 }
         });
 
         // Instructor cards with combined timeline per card
@@ -122,8 +109,7 @@ function gsapAnimation() {
             const cardTl = gsap.timeline({
                 scrollTrigger: {
                     trigger: card,
-                    start: "top 97%",
-                    end: "top 92%",
+                    start: "top 100%", end: "top 96%",
                     scrub: 1,
                     immediateRender: false
                 }
@@ -203,10 +189,7 @@ function gsapAnimation() {
         tl.from(".course-section-title", { y: 100, opacity: 0, duration: 1, scrollTrigger: { trigger: ".course-section-title", start: "top 80%", end: "top 70%", scrub: 2 } });
         tl.from(".course", { scale: 0, duration: 2, stagger: 0.3, scrollTrigger: { trigger: ".course", start: "top 90%", end: "top 70%", scrub: 2 } });
 
-        // Process
-        tl.from(".process .left div,.process-steps .step", { x: "-100%", duration: 2, stagger: 0.3, scrollTrigger: { trigger: ".left div,.process-steps .step", start: "top 70%", end: "top 30%", scrub: 2 } }, "process");
-        tl.from(".process .right", { x: "100%", scale: 0, duration: 2, stagger: 0.3, scrollTrigger: { trigger: ".process .right", start: "top 100%", end: "top 50%", scrub: 2 } }, "process");
-
+      
         // -----------------------------
         // INSTRUCTORS SECTION MOBILE
         // -----------------------------
@@ -214,15 +197,14 @@ function gsapAnimation() {
             scale: 0,
             opacity: 0,
             duration: 1,
-            scrollTrigger: { trigger: ".instructors-section", start: "top 95%", end: "top 90%", scrub: 2 }
+            scrollTrigger: { trigger: ".instructors-section", start: "top 100%", end: "top 95%", scrub: 2 }
         });
 
         gsap.utils.toArray(".instructors-section .instructor-card").forEach(card => {
             const cardTl = gsap.timeline({
                 scrollTrigger: {
                     trigger: card,
-                    start: "top 95%",
-                    end: "top 90%",
+                   start: "top 100%", end: "top 96%",
                     scrub: 1,
                     immediateRender: false
                 }
@@ -238,22 +220,22 @@ function gsapAnimation() {
         gsap.from(".footer .extra-shape", {
             width: "10%",
             duration: 1,
-            scrollTrigger: { trigger: ".footer .extra-shape", start: "top 100%", end: "top 95%", toggleActions: "play none none reverse" }
+            scrollTrigger: { trigger: ".footer .extra-shape", start: "top 100%", end: "top 97%", toggleActions: "play none none reverse" }
         });
         gsap.from(".footer-container", {
             scale: 0,
             duration: 1,
-            scrollTrigger: { trigger: ".footer-container", start: "top 100%", end: "top 95%", toggleActions: "play none none reverse" }
+            scrollTrigger: { trigger: ".footer-container", start: "top 100%", end: "top 97%", toggleActions: "play none none reverse" }
         });
         gsap.from(".footer-container .left div", {
             y: 200, x: -500,
             duration: 2, stagger: 0.3,
-            scrollTrigger: { trigger: ".footer-container .left div", start: "top 100%", end: "top 95%", toggleActions: "play none none reverse" }
+            scrollTrigger: { trigger: ".footer-container .left div", start: "top 100%", end: "top 97%", toggleActions: "play none none reverse" }
         });
         gsap.from(".link-set li", {
             y: 200, x: 500,
             duration: 2, stagger: 0.3,
-            scrollTrigger: { trigger: ".link-set li", start: "top 100%", end: "top 95%", toggleActions: "play none none reverse" }
+            scrollTrigger: { trigger: ".link-set li", start: "top 100%", end: "top 97%", toggleActions: "play none none reverse" }
         });
     });
 }

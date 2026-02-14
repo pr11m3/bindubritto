@@ -258,7 +258,7 @@ button {
 /* hero section image  */
 .hero-section-image {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 75px);
     background-color: var(--color3);
     display: flex;
     justify-content: center;
@@ -369,7 +369,7 @@ button {
 
 .hero-section-two {
     width: 100vw;
-    height: calc(100vh - 75px);
+    height: calc(calc(100vh - 75px) - 75px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -508,8 +508,8 @@ button {
 }
 
 .features-title {
-    font-family: "Anek Bangla";
-    font-size: 3vmax;
+    font-family: "Tiro Bangla", sans-serif;
+    font-size: 3rem;
     font-weight: 500;
     position: relative;
 }
@@ -521,7 +521,7 @@ button {
     background-size: cover;
     background-position: center;
     position: absolute;
-    top: -22%;
+    top: -45%;
     left: -12%;
 }
 
@@ -595,12 +595,12 @@ button {
 
 
 .feature .feature-heading {
-    font-family: var(--head-font);
+    font-family: "Anek Bangla";
     font-size: 2vmax;
     font-weight: 500;
     color: var(--color1);
     text-transform: capitalize;
-
+    line-height: 1.1;
 }
 
 .feature .feature-desc {
@@ -615,13 +615,15 @@ button {
 /* courses  */
 .course-section {
     width: 100vw;
-    height: 120vh;
+    height: auto;
     background-color: var(--color2);
     padding: 5% 0px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
+    gap:0px
+   
 
 }
 
@@ -644,7 +646,7 @@ button {
 
 .course-container {
     width: 80vw;
-    height: 70%;
+    height: 80%;
 
     display: flex;
     align-items: center;
@@ -664,7 +666,7 @@ button {
 
 .course .course-image {
     width: 100%;
-    height: 50%;
+    height: 140px;
     background-color: #fff;
     overflow: hidden;
 }
@@ -686,7 +688,7 @@ button {
     align-items: flex-start;
     justify-content: space-around;
     position: relative;
-    z-index: 5;
+  
 }
 
 .course-details::before {
@@ -694,7 +696,7 @@ button {
     position: absolute;
     inset: 0;
     background-color: var(--color1);
-    z-index: -1;
+ 
     transform: scaleY(0%);
     transition: transform 300ms ease;
     transform-origin: top;
@@ -796,111 +798,12 @@ button {
     transform: scaleY(1);
 }
 
-/* process steps */
-.process {
-    width: 100vw;
-    height: calc(100vh - 75px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 30vh;
-
-}
-
-.process .left {
-    width: 40%;
-    height: 100%;
-    padding: 5% 0%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.process-title {
-    font-family: var(--head-font);
-    font-size: 4vmax;
-    font-weight: 600;
-
-}
-
-.process-title .fancy {
-    background-color: var(--color3);
-    color: #000;
-}
-
-.process-desc {
-    width: 80%;
-    font-family: var(--secondary-font);
-    font-size: 1.3vmax;
-    font-weight: 500;
-    color: var(--color2);
-    text-transform: capitalize;
-}
-
-.process-steps {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 10px;
-}
-
-.process-steps .step {
-    font-family: var(--head-font);
-    font-size: 1.5vmax;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    font-weight: 600;
-    position: relative;
-    padding: 15px 0px;
-    cursor: pointer;
-
-}
-
-.process-steps .step i {
-    height: 100%;
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    background-color: var(--color3);
-    border-radius: 50%;
-    font-size: 18px;
-}
-
-
-.process .right {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.process-image {
-    height: 80%;
-    aspect-ratio: 1;
-
-}
-
-.process-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}
 
 /* footer */
 
 /* .footer {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 75px);
     background-color: var(--color5);
     position: relative;
     padding-top: 40vh;
@@ -1105,6 +1008,7 @@ button {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    gap:10px;
 }
 
 .footer-container .right .link-container {
@@ -1144,8 +1048,7 @@ button {
     padding: 5px;
 }
 
-.link-set a::before, 
-.process-steps .step::before {
+.link-set a::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -1157,16 +1060,14 @@ button {
 
 }
 
-.link-set li:hover::before,
-.process-steps .step:hover::before {
+.link-set li:hover::before {
     transform: scaleX(1);
     transform-origin: left;
 
 }
 
 .footer-container .right .terms {
-    width: 80%;
-    text-align: right;
+ 
     font-family: var(--head-font);
     font-size: 1vmax;
     letter-spacing: 1px;
@@ -1259,7 +1160,7 @@ button:hover i {
 
 /* For Tablets and Mobile (Max-width: 1024px) */
 @media (max-width: 1024px) {
-    .hero-section, .hero-section-two, .process, .get-started {
+    .hero-section, .hero-section-two, .get-started {
         flex-direction: column;
         height: auto;
         padding: 50px 5%;
@@ -1267,13 +1168,13 @@ button:hover i {
 
     .hero-section-title, .hero-section-desc, 
     .hero-section-two .left, .hero-section-two .right,
-    .process .left, .process .right,
+    
     .get-started .left, .get-started .right {
         width: 100%;
         text-align: center;
     }
 
-    .hero-section-desc, .process .left {
+    .hero-section-desc {
         align-items: center;
     }
 
@@ -1315,10 +1216,14 @@ button:hover i {
         font-size: 1rem;
     }
     /* Scaling Text for Readability */
-    .hero-section-title, .second-title, .features-title, .course-section-title {
+    .hero-section-title, .second-title, .course-section-title {
         font-size: 3rem !important;
     }
 
+    .features-title
+    {
+        font-size: 2rem;
+    }
     .hero-section-desc p, .second-desc p, .feature-desc {
         font-size: 1.4rem !important;
     }
@@ -1336,28 +1241,54 @@ button:hover i {
     .feature-section {
         grid-template-columns: 1fr;
     }
-    .process-steps .step {
-    font-size: 12px;
-    }
+ 
     .right .second-desc {
     width: 100%;
 }
 
+    .feature-1 .features-button
+    {
+        font-size: 2vmax;
+    }
+
     .feature-1 {
         grid-area: auto;
+        align-items: flex-start;
+        justify-content: space-evenly;
     }
       .course-section {
         height: 90vh;
     }
-
+   .features-title .extra-line{
+    top: -28%;
+    left: -12%;
+   }
+   .feature:not(.feature-1) {
+    gap: 15px;
+    justify-content: flex-start;
+}
     /* Course Cards to Full Width */
     .course {
         width: 100%;
+        height: auto;
     }
     .course-details .view-course {
         font-size: 1.5rem;
     }
 
+    .course-container{
+        height: 75%;
+    }
+
+    .course-details .course-heading
+    {
+        font-size: 2.6vmax;
+        height: auto;
+    }
+  .course-desc-list {
+    font-size: 2vmax !important; /* larger and more readable */
+    line-height: 1.6;             /* add breathing room */
+}
     /* Highlights (Stats) */
     .highlight-topics {
         flex-direction: column;
@@ -1391,9 +1322,21 @@ button:hover i {
   
 }
 
+.hero-section-title .extra-line {
+    top:-25%;
+    left:4%;
+}
+
+.fancy{
+    padding: 5px 20px;
+}
 
 }
 @media (max-width: 768px) {
+    .footer{
+        padding: 55px 0 0 0;
+    }
+
     .footer-container {
         flex-direction: column; /* stack items vertically */
         text-align: center;     /* center content */
@@ -1440,7 +1383,7 @@ button:hover i {
 }
 .instructors-section {
     width: 85vw;
-    margin: 100px auto;
+    margin: -45px auto;
     padding: 60px 40px;
     background: var(--color3);
     border-radius: 40px;
@@ -1497,7 +1440,7 @@ button:hover i {
 @media (max-width: 768px) {
 
     .instructors-section {
-        margin: 50px auto;
+        margin: -45px auto;
         padding: 40px 20px;
     }
 
@@ -1513,4 +1456,30 @@ button:hover i {
     .instructor-card {
         width: 100%;
     }
+}
+
+
+.course-desc-list {
+    list-style: none; /* remove default bullets */
+    padding-left: 0;
+    margin: 10px 0;
+    font-family: var(--secondary-font);
+    font-size: 1.2vmax;
+    color: var(--color2);
+}
+
+.course-desc-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Add custom bullet using ::before */
+.course-desc-list li::before {
+    content: "✔"; /* can also use other symbols like "•" or "➤" */
+    position: absolute;
+    left: 0;
+    color: var(--color3);
+    font-weight: bold;
 }
