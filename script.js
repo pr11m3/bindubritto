@@ -15,7 +15,7 @@ function showCourses() {
 }
 
 function jumpReg() {
-    window.location.href = "https://bindubritto.itsamiul.top";
+    window.location.href = "";
 }
 
 const logo = document.querySelector(".nav-left")
