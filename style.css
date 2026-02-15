@@ -1423,15 +1423,39 @@ button:hover i {
     margin-bottom: 20px;
 }
 
-.instructor-card h3 {
+/* .instructor-card h3 {
     font-family: var(--head-font);
     margin-bottom: 10px;
+} */
+
+.instructor-name {
+    font-family: var(--head-font);
+    margin-bottom: 8px;
+    text-transform: uppercase;   
+ 
 }
 
-.instructor-card p {
+.designation {
     font-family: var(--secondary-font);
-    color: var(--color2);
+    font-weight: 600;
+    color: var(--color1);
+    margin-bottom: 5px;
 }
+
+.department {
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
+    color: var(--color2);
+    opacity: 0.8;
+}
+
+
+/* .instructor-card p {
+     font-family: var(--secondary-font);
+    font-weight: 600;
+    color: var(--color1);
+    margin-bottom: 5px;
+} */
 
 .instructor-card:hover {
     transform: translateY(-10px);

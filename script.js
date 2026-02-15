@@ -220,22 +220,22 @@ function gsapAnimation() {
         gsap.from(".footer .extra-shape", {
             width: "10%",
             duration: 1,
-            scrollTrigger: { trigger: ".footer .extra-shape", start: "top 100%", end: "top 97%", toggleActions: "play none none reverse" }
+            scrollTrigger: { trigger: ".footer .extra-shape", start: "top 100%", end: "top 99%", toggleActions: "play none none reverse" }
         });
         gsap.from(".footer-container", {
             scale: 0,
             duration: 1,
-            scrollTrigger: { trigger: ".footer-container", start: "top 100%", end: "top 97%", toggleActions: "play none none reverse" }
+            scrollTrigger: { trigger: ".footer-container", start: "top 100%", end: "top 99%", toggleActions: "play none none reverse" }
         });
         gsap.from(".footer-container .left div", {
             y: 200, x: -500,
             duration: 2, stagger: 0.3,
-            scrollTrigger: { trigger: ".footer-container .left div", start: "top 100%", end: "top 97%", toggleActions: "play none none reverse" }
+            scrollTrigger: { trigger: ".footer-container .left div", start: "top 100%", end: "top 99%", toggleActions: "play none none reverse" }
         });
         gsap.from(".link-set li", {
             y: 200, x: 500,
             duration: 2, stagger: 0.3,
-            scrollTrigger: { trigger: ".link-set li", start: "top 100%", end: "top 97%", toggleActions: "play none none reverse" }
+            scrollTrigger: { trigger: ".link-set li", start: "top 100%", end: "top 99%", toggleActions: "play none none reverse" }
         });
     });
 }
