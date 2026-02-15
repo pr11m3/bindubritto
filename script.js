@@ -139,11 +139,18 @@ function gsapAnimation() {
             duration: 2, stagger: 0.3,
             scrollTrigger: { trigger: ".footer-container .left div", start: "top 100%", end: "top 95%", toggleActions: "play none none reverse" }
         });
-        gsap.from(".link-set li", {
-            y: 200, x: 500,
-            duration: 2, stagger: 0.3,
-            scrollTrigger: { trigger: ".link-set li", start: "top 100%", end: "top 95%", toggleActions: "play none none reverse" }
-        });
+    gsap.from(".link-set a", {
+    y: 80,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".link-set",
+        start: "top 95%",
+        toggleActions: "play none none reverse"
+    }
+});
     });
 
     // -----------------------------
@@ -232,11 +239,18 @@ function gsapAnimation() {
             duration: 2, stagger: 0.3,
             scrollTrigger: { trigger: ".footer-container .left div", start: "top 100%", end: "top 99%", toggleActions: "play none none reverse" }
         });
-        gsap.from(".link-set li", {
-            y: 200, x: 500,
-            duration: 2, stagger: 0.3,
-            scrollTrigger: { trigger: ".link-set li", start: "top 100%", end: "top 99%", toggleActions: "play none none reverse" }
-        });
+    gsap.from(".link-set a", {
+    y: 80,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".link-set",
+        start: "top 95%",
+        toggleActions: "play none none reverse"
+    }
+});
     });
 }
 
