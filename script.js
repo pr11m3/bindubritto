@@ -14,9 +14,9 @@ function showCourses() {
     });
 }
 
-function jumpReg() {
-    window.location.href = "https://forms.gle/jjD2dvgPB8DKJ2vg8";
-}
+// function jumpReg() {
+//     window.location.href = "https://forms.gle/jjD2dvgPB8DKJ2vg8";
+// }
 
 const logo = document.querySelector(".nav-left")
 const footerLogo = document.querySelector(".footer-container .logo")
